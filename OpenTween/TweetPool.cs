@@ -121,5 +121,12 @@ namespace OpenTween
             else
                 this.labelAutoRetry.Text = "自動で再試行されません";
         }
+        
+        private void Account_Change(object sender, EventArgs e)
+        {
+            SendKeys.SendWait("^+A");
+            System.Threading.Thread.Sleep(100);
+        }
+
     }
 }
